@@ -1,16 +1,50 @@
 <template>
   <div class="flex justify-center w-full">
     <div class="container">
-      <div class="flex flex-row">
-        <!-- header section -->
-        <div class="flex flex-col">
-          <!-- header left -->
-          <p class="mono">Twitter</p>
-          <p class="mono">Figma</p>
-          <p class="mono">Insta</p>
+      <div class="grid grid-cols-4 gap-1">
+        <div class="col-span-1 flex flex-col">
+          <div class="grid grid-cols-5 gap-2 mb-2">
+            <div class="col-span-1">
+              <img class="inline" src="@/assets/twitter.svg" />
+            </div>
+            <div class="col-span-4">
+              <a href="http://twitter.com/danodoesdesign" class="mono">Twitter</a>
+            </div>
+          </div>
+          <div class="grid grid-cols-5 gap-2 mb-2">
+            <div class="col-span-1">
+              <img class="inline mr-2" src="@/assets/figma.svg" />
+            </div>
+            <div class="col-span-4">
+              <a href="http://figma.com/@dano" class="mono">Figma</a>
+            </div>
+          </div>
+          <div class="grid grid-cols-5 gap-2 mb-2">
+            <div class="col-span-1">
+              <img class="inline mr-2" src="@/assets/insta.svg" />
+            </div>
+            <div class="col-span-4">
+              <a href="http://instagram.com/danodoesdesign" class="mono">Insta</a>
+            </div>
+          </div>
+          <div class="grid grid-cols-5 gap-2 mb-2">
+            <div class="col-span-1">
+              <img class="inline mr-2" src="@/assets/github.svg" />
+            </div>
+            <div class="col-span-4">
+              <a href="https://github.com/danodoesdesign" class="mono">GitHub</a>
+            </div>
+          </div>
+          <div class="grid grid-cols-5 gap-2 mb-2">
+            <div class="col-span-1">
+              <img class="inline mr-2" src="@/assets/email.svg" />
+            </div>
+            <div class="col-span-4">
+              <a href="mailto:dano.does.design@gmail.com" class="mono">Email</a>
+            </div>
+          </div>
         </div>
-        <div class="flex flex-row-reverse flex-grow">
-          <!-- header right -->
+        <div class="col-span-4 sm:col-span-3 mt-4 sm:mt-0 flex flex-row-reverse">
           <p class="mono">
             Working for
             <a href="http://www.futurefriendly.team">Future Friendly</a>. Located at
@@ -20,9 +54,10 @@
           </p>
         </div>
       </div>
+
       <div class="flex justify-center screen-height items-center">
         <!-- title section -->
-        <h1 class="expanding-title -mt-20">
+        <h1 class="expanding-title -mt-32">
           dano does
           <span class="fancy-colour">design</span>
         </h1>
@@ -44,9 +79,40 @@
         </div>
       </div>
       <!-- header over -->
-      <div class="mt-20">
-        <h2>About me</h2>
-        <p>This is about me.</p>
+      <div class="mt-40">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-32">
+          <div class="col-span-1 flex flex-row sm:flex-row-reverse">
+            <h2>about me</h2>
+          </div>
+          <div class="col-span-1 sm:col-span-2 mt-2">
+            <p
+              class="mono mb-3"
+            >I’m a Daniel O’Hara, an Australian Product Designer who aspires to leave a positive mark on the world — instead of creating endlessly for the sake of capitalism &amp; profit.</p>
+            <p
+              class="mono mb-3"
+            >A lot of my work has been with the Australian government, and I worry about my designy/techy skills stagnating in bureaucracy. However I believe, while working down under, I can help create the greatest social change by leveraging the scope of the powers that be.</p>
+            <p
+              class="mono mb-3"
+            >By creating inclusive products and services, and helping mature design capability in the public service, I think I’ll help leave this world better than when I found it.</p>
+          </div>
+        </div>
+      </div>
+      <div class="mt-40 mb-40">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-32">
+          <div class="col-span-1 flex flex-row sm:flex-row-reverse">
+            <h2>more info??</h2>
+          </div>
+          <div class="col-span-1 sm:col-span-2 mt-2">
+            <p
+              class="mono mb-3"
+            >I'm not looking to write this (or make case studies) rn bc I'm not looking for a role, but thanks for showing interest 🥺🥺</p>
+            <p class="mono mb-3">Hey look since you're here DM or email me and tell me your story!!</p>
+            <p class="mono">
+              <a href="http://twitter.com/danodoesdesign">DM me on twitter dot com</a> or
+              <a href="mailto:dano.does.design@gmail.com">email me</a>.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -59,12 +125,23 @@ body {
   /* ... */
 }
 
+li {
+  @apply mb-2;
+}
+
 a {
   text-decoration: underline;
+  &:hover {
+    font-weight: 600;
+    text-decoration: none;
+    transform: translate3d(var(--move-initial), 0, 0);
+    animation: marquee 3s linear infinite;
+    animation-play-state: running;
+  }
 }
 
 .screen-height {
-  height: calc(100vh - 11.5rem);
+  height: calc(100vh - 17.5rem);
 }
 
 @media only screen and (max-width: 640px) {
