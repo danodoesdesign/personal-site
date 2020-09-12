@@ -57,7 +57,7 @@
 
       <div class="flex justify-center screen-height items-center">
         <!-- title section -->
-        <h1 class="expanding-title -mt-32">
+        <h1 class="expanding-title -mt-26 sm:-mt-32">
           dano does
           <span class="fancy-colour">design</span>
         </h1>
@@ -148,7 +148,7 @@ a {
   //640 is tailwind base small breakpoint btw
   //fixes phone browser UI rendering over the top
   .screen-height {
-    height: calc(100vh - 20rem);
+    height: calc(100vh - 31rem);
   }
 }
 
