@@ -14,26 +14,40 @@
       </h1>
       <h4 v-show="!bigBoy">
         <router-link to="/">
-        <img
-          class="h-8 mr-2 -mt-1"
-          style="display: inline"
-          src="@/assets/arrow-left.svg"
-        />
-          <img class="h-8 -mt-2 mr-2" style="display: inline" src="@/assets/white-crest.svg" />
+          <img
+            class="h-8 mr-2 -mt-1"
+            style="display: inline"
+            src="@/assets/arrow-left.svg"
+          />
+          <img
+            class="h-8 -mt-2 mr-2"
+            style="display: inline"
+            src="@/assets/white-crest.svg"
+          />
           The Department of
-        <span class="fancy-colour">Apartment</span>.
+          <span class="fancy-colour">Apartment</span>.
         </router-link>
       </h4>
 
       <h2 class="mt-10 mb-8">
-        <img v-show="map" class="h-12 mr-2 -mt-2" style="display: inline" src="@/assets/map.svg" />
+        <img
+          v-show="map"
+          class="h-12 mr-2 -mt-2"
+          style="display: inline"
+          src="@/assets/map.svg"
+        />
         <img
           v-show="directions"
           class="h-12 mr-2 -mt-2"
           style="display: inline"
           src="@/assets/directions.svg"
         />
-        <img v-show="wifi" class="h-12 mr-2 -mt-2" style="display: inline" src="@/assets/wifi.svg" />
+        <img
+          v-show="wifi"
+          class="h-12 mr-2 -mt-2"
+          style="display: inline"
+          src="@/assets/wifi.svg"
+        />
         {{ title }}
       </h2>
       <!--<button @click="toggleDarkMode">Toggle</button>-->

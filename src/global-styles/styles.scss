@@ -5,7 +5,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: $font-color;
-    font-size: 1.25rem;
+    font-size: $base-font-size;
   }
   
   #nav {
@@ -54,5 +54,8 @@ h2 {
   
   p {
     font-family: $body-font-family;
-    margin-bottom: 1rem;
+  }
+
+  .mono {
+    font-family: $alt-font-family;
   }
