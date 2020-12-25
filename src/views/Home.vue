@@ -167,7 +167,7 @@
           I was listening to
           <a href="https://www.youtube.com/watch?v=cNAdtkSjSps">Pong</a> the
           entire time I was making this, and I think I hit the mark with the
-          white theme that hints and cyberpunk distopia but is still
+          white theme that hints and cyberpunk dystopia but is still reasonably
           professional.
         </p>
       </div>
