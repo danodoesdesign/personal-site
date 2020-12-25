@@ -21,6 +21,6 @@ export default {
   name: "PageTemplate",
   components: {
     /* ... */
-  }
+  },
 };
 </script>

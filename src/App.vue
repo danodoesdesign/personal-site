@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="w-full h-screen flex flex-col items-center p-10">
+  <div id="app" class="w-full h-screen flex flex-col items-center p-10 pb-24">
     <transition name="fade" mode="out-in">
       <router-view />
     </transition>

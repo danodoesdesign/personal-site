@@ -1,7 +1,7 @@
 <template>
-  <div class="flex justify-center w-full">
-    <div class="container">
-      <div class="grid grid-cols-4 gap-1">
+  <div class="flex justify-center w-full h-full">
+    <div class="container pb-64">
+      <div class="grid grid-cols-4 gap-1 sm:px-10">
         <div class="col-span-1 flex flex-col">
           <div class="grid grid-cols-5 gap-2 mb-2">
             <div class="col-span-1">
@@ -41,7 +41,7 @@
               >
             </div>
           </div>
-          <div class="grid grid-cols-5 gap-2 mb-2">
+          <div class="grid grid-cols-5 gap-2">
             <div class="col-span-1">
               <img class="inline mr-2" src="@/assets/email.svg" />
             </div>
@@ -53,7 +53,7 @@
         <div
           class="col-span-4 sm:col-span-3 mt-4 sm:mt-0 flex flex-row-reverse"
         >
-          <p class="mono">
+          <p class="mono experiment sm:text-right">
             Working for
             <a href="http://www.futurefriendly.team">Future Friendly</a>.
             Located at
@@ -65,17 +65,23 @@
         </div>
       </div>
 
-      <div class="flex justify-center screen-height items-center">
-        <!-- title section -->
-        <h1 class="expanding-title -mt-26 sm:-mt-32">
-          dano does
-          <span class="fancy-colour">design</span>
+      <div class="flex justify-center items-center mt-10">
+        <img
+          id="globe"
+          class="opacity-25 h-6/12 w-6/12 md:h-5/12 md:w-5/12 lg:h-5/12 lg:w-5/12 max-w-screen-md"
+          src="@/assets/glove.gif"
+        />
+        <h1 class="absolute text-white big-text text-center">
+          <span class="">dano does<br />design</span>
         </h1>
       </div>
-      <div class="flex justify-center">
-        <!-- scrolling text -->
-        <div class="marquee">
+
+      <div class="flex flex-col justify-center mt-24">
+        <div class="marquee mb-10 max-w-screen-xl">
           <div class="marquee__inner mono" aria-hidden="true">
+            <span>&darr; SCROLL FOR ESSAY</span>
+            <span>&darr; SCROLL FOR ESSAY</span>
+            <span>&darr; SCROLL FOR ESSAY</span>
             <span>&darr; SCROLL FOR ESSAY</span>
             <span>&darr; SCROLL FOR ESSAY</span>
             <span>&darr; SCROLL FOR ESSAY</span>
@@ -89,17 +95,20 @@
         </div>
       </div>
       <!-- header over -->
-      <div class="mt-40">
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-32">
+      <div class="mt-10 sm:mt-24 md:mt-48">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-4 gap-4 sm:gap-10 md:gap-22 lg:gap-32"
+        >
           <div class="col-span-1 flex flex-row sm:flex-row-reverse">
-            <h2>about me</h2>
+            <h2 class="text-left sm:text-right">about me</h2>
           </div>
-          <div class="col-span-1 sm:col-span-2 mt-2">
+          <div class="col-span-1 sm:col-span-3 mt-2">
             <p class="mono mb-3">
               I’m a Daniel O’Hara, an Australian Product Designer who aspires to
               leave a positive mark on the world — instead of creating endlessly
               for the sake of capitalism &amp; profit.
             </p>
+
             <p class="mono mb-3">
               A lot of my work has been with the Australian government, and I
               worry about my designy/techy skills stagnating in bureaucracy.
@@ -115,37 +124,123 @@
           </div>
         </div>
       </div>
-      <div class="mt-40 mb-40">
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-32">
+      <div class="mt-10 sm:mt-24 mb-64">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-4 gap-4 sm:gap-10 md:gap-22 lg:gap-32"
+        >
           <div class="col-span-1 flex flex-row sm:flex-row-reverse">
-            <h2>more info??</h2>
+            <h2 class="text-left sm:text-right">current <br />projects</h2>
           </div>
-          <div class="col-span-1 sm:col-span-2 mt-2">
-            <p class="mono mb-3">
-              I'm not looking to write this (or make case studies) rn bc I'm not
-              looking for a role, but thanks for showing interest 🥺🥺
+          <div class="col-span-1 sm:col-span-3 mt-2">
+            <p class="mono mb-5">
+              <a href="http://protokit.danodoes.design/" class="font-bold"
+                >Prototype kit</a
+              ><br />
+              A basic but hyper inclusive UI kit for the stupidly rapid concept
+              prototype work we do at |F|F|. Will include Figma autolayout clone
+              after first pass. Building in Vue with TailwindCSS via Nuxt.
             </p>
-            <p class="mono mb-3">
-              Hey look since you're here DM or email me and tell me your story!!
-            </p>
-            <p class="mono">
-              <a href="http://twitter.com/danodoesdesign"
-                >DM me on twitter dot com</a
-              >
-              or <a href="mailto:dano.does.design@gmail.com">email me</a>.
-            </p>
+
+            <div class="col-span-1 sm:col-span-3 mt-2">
+              <p class="mono mb-5">
+                <a href="http://turnips.danodoes.design/" class="font-bold"
+                  >Turnip tracker</a
+                ><br />
+                Have some ideas to make this a really sophisticated tool, if
+                you're into Animal Crossing.
+              </p>
+            </div>
+
+            <div class="col-span-1 sm:col-span-3 mt-2">
+              <p class="mono mb-5">
+                <span class="font-bold">3D for the web</span><br />
+                Can't link but making some cool shit via
+                <a href="http://www.3dfordesigners.com/">3D for Designers</a>.
+              </p>
+            </div>
           </div>
         </div>
+      </div>
+      <div class="flex flex-col justify-center mt-42 mb-10 text-center px-64">
+        <img class="w-10 h-10 self-center mb-10" src="@/assets/glove.gif" />
+        <p class="mono">
+          I was listening to
+          <a href="https://www.youtube.com/watch?v=cNAdtkSjSps">Pong</a> the
+          entire time I was making this, and I think I hit the mark with the
+          white theme that hints and cyberpunk distopia but is still
+          professional.
+        </p>
       </div>
     </div>
   </div>
 </template>
 
 <style scoped lang="scss">
+.big-text {
+  font-size: 10vw;
+}
+body {
+  background-color: #333;
+  padding-bottom: 20rem;
+}
+
+#globe {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
 //for some reason getting rid of anything here causes tailwind to mess up so
 //don't remove this default style I guess
 body {
   /* ... */
+}
+
+a:hover {
+  outline: none;
+  text-align: center;
+  font-weight: 700;
+  background: rgb(255, 255, 255);
+  color: black;
+
+  &,
+  * {
+    animation: cray 6s infinite steps(80);
+    display: inline-block;
+  }
+}
+
+@keyframes cray {
+  @for $i from 1 to 80 {
+    $per: 100% / 80 * $i;
+    $weight: (100, 200, 300, 400, 500, 600, 700);
+    $style: (normal, italic, normal, normal);
+    $decor: (none, none, line-through, underline, none, none, none);
+    $trans: (
+      none,
+      none,
+      uppercase,
+      lowercase,
+      capitalize,
+      none,
+      none,
+      none,
+      none,
+      none,
+      none
+    );
+
+    $arrayW: random(7);
+    $arrayS: random(4);
+    $arrayD: random(7);
+    $arrayT: random(11);
+
+    #{$per} {
+      font-weight: nth($weight, $arrayW);
+      font-style: nth($style, $arrayS);
+      text-decoration: nth($decor, $arrayD);
+      text-transform: nth($trans, $arrayT);
+    }
+  }
 }
 
 li {
@@ -157,16 +252,13 @@ a {
   &:hover {
     font-weight: 600;
     text-decoration: none;
-    transform: translate3d(var(--move-initial), 0, 0);
-    animation: marquee 3s linear infinite;
-    animation-play-state: running;
   }
 }
-
+/*
 .screen-height {
-  height: calc(100vh - 17.5rem);
+  height: calc(100vh - 25rem);
 }
-
+*/
 @media only screen and (max-width: 640px) {
   //640 is tailwind base small breakpoint btw
   //fixes phone browser UI rendering over the top
@@ -175,55 +267,6 @@ a {
   }
 }
 
-.expanding-title {
-  font-size: 13vw;
-  white-space: nowrap;
-}
-
-.fancy-colour {
-  background: linear-gradient(270deg, #ec2f4b, #009fff);
-  background-size: 400% 400%;
-
-  -webkit-animation: gradientAnimation 6s ease infinite;
-  -moz-animation: gradientAnimation 6s ease infinite;
-  animation: gradientAnimation 6s ease infinite;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-@-webkit-keyframes gradientAnimation {
-  0% {
-    background-position: 0% 20%;
-  }
-  50% {
-    background-position: 100% 81%;
-  }
-  100% {
-    background-position: 0% 20%;
-  }
-}
-@-moz-keyframes gradientAnimation {
-  0% {
-    background-position: 0% 20%;
-  }
-  50% {
-    background-position: 100% 81%;
-  }
-  100% {
-    background-position: 0% 20%;
-  }
-}
-@keyframes gradientAnimation {
-  0% {
-    background-position: 0% 20%;
-  }
-  50% {
-    background-position: 100% 81%;
-  }
-  100% {
-    background-position: 0% 20%;
-  }
-}
 .marquee {
   position: relative;
   overflow: hidden;
@@ -239,16 +282,13 @@ a {
   transform: translate3d(var(--move-initial), 0, 0);
   animation: marquee 10s linear infinite;
   animation-play-state: running;
+  animation-direction: alternate;
 }
 
 .marquee span {
   white-space: nowrap;
   font-size: 1.125rem;
   margin-left: 0.5rem;
-}
-
-.marquee:hover .marquee__inner {
-  animation-play-state: paused;
 }
 
 @keyframes marquee {
@@ -267,6 +307,6 @@ export default {
   name: "Home",
   components: {
     /* ... */
-  }
+  },
 };
 </script>
