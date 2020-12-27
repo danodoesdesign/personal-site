@@ -1,5 +1,7 @@
 
 .DS_Store
+dist/
+dist
 node_modules
 node_modules
 node_modules/.cache/vue-loader/1cf80ddb15e57c9143de8fa4d0a22c84.json
@@ -11073,3 +11075,7 @@ node_modules/yorkie/node_modules/yallist/package.json
 node_modules/yorkie/node_modules/yallist/README.md
 node_modules/yorkie/node_modules/yallist/yallist.js
 node_modules/yorkie/package.json
+dist/js/app.637c47c8.js.map
+dist/js/app.637c47c8.js
+dist/index.html
+dist/css/app.79a0677d.css
