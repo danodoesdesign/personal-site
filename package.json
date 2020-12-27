@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "animate.css": "^4.1.1",
+    "scroll-into-view-if-needed": "^2.2.26",
     "vue": "^2.6.12",
     "vue-router": "^3.4.9",
     "vuex": "^3.6.0"

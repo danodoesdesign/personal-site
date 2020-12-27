@@ -71,32 +71,38 @@
           class="opacity-25 h-9/12 w-9/12 md:h-5/12 md:w-5/12 lg:h-5/12 lg:w-5/12 max-w-screen-md"
           src="@/assets/glove.gif"
         />
-        <h1 class="absolute text-white big-text text-center">
-          <span class="">dano does<br />design</span>
+        <h1 class="absolute text-white big-text text-center cursor-wait">
+          <span class="text-cray">d</span><span class="text-cray">a</span
+          ><span class="text-cray">n</span
+          ><span class="text-cray">o</span>&nbsp;<span class="text-cray">d</span
+          ><span class="text-cray">o</span><span class="text-cray">e</span
+          ><span class="text-cray">s</span><br /><span class="text-cray">d</span
+          ><span class="text-cray">e</span><span class="text-cray">s</span
+          ><span class="text-cray">i</span><span class="text-cray">g</span
+          ><span class="text-cray">n</span>
         </h1>
       </div>
 
       <div class="flex flex-col justify-center mt-24">
         <div class="marquee mb-10 max-w-screen-xl">
-          <div class="marquee__inner mono" aria-hidden="true">
-            <span>&darr; SCROLL FOR ESSAY</span>
-            <span>&darr; SCROLL FOR ESSAY</span>
-            <span>&darr; SCROLL FOR ESSAY</span>
-            <span>&darr; SCROLL FOR ESSAY</span>
-            <span>&darr; SCROLL FOR ESSAY</span>
-            <span>&darr; SCROLL FOR ESSAY</span>
-            <span>&darr; SCROLL FOR ESSAY</span>
-            <span>&darr; SCROLL FOR ESSAY</span>
-            <span>&darr; SCROLL FOR ESSAY</span>
-            <span>&darr; SCROLL FOR ESSAY</span>
-            <span>&darr; SCROLL FOR ESSAY</span>
-            <span>&darr; SCROLL FOR ESSAY</span>
+          <div class="marquee__inner mono cursor-wait" aria-hidden="true">
+            <span>&darr; <span class="text-cray">SCROLL FOR ESSAY</span></span>
+            <span>&darr; <span class="text-cray">SCROLL FOR ESSAY</span></span>
+            <span>&darr; <span class="text-cray">SCROLL FOR ESSAY</span></span>
+            <span>&darr; <span class="text-cray">SCROLL FOR ESSAY</span></span>
+            <span>&darr; <span class="text-cray">SCROLL FOR ESSAY</span></span>
+            <span>&darr; <span class="text-cray">SCROLL FOR ESSAY</span></span>
+            <span>&darr; <span class="text-cray">SCROLL FOR ESSAY</span></span>
+            <span>&darr; <span class="text-cray">SCROLL FOR ESSAY</span></span>
+            <span>&darr; <span class="text-cray">SCROLL FOR ESSAY</span></span>
+            <span>&darr; <span class="text-cray">SCROLL FOR ESSAY</span></span>
           </div>
         </div>
       </div>
       <!-- header over -->
       <div class="mt-10 sm:mt-24 md:mt-48">
         <div
+          id="nextSection"
           class="grid grid-cols-1 sm:grid-cols-4 gap-4 sm:gap-10 md:gap-22 lg:gap-32"
         >
           <div class="col-span-1 flex flex-row sm:flex-row-reverse">
@@ -186,6 +192,48 @@ body {
   padding-bottom: 20rem;
 }
 
+.text-cray:hover {
+  &,
+  * {
+    animation: cray 6s infinite steps(80);
+    display: inline-block;
+  }
+}
+
+@keyframes cray {
+  @for $i from 1 to 80 {
+    $per: 100% / 80 * $i;
+    $weight: (100, 200, 300, 400, 500, 600, 700);
+    $style: (normal, italic, normal, normal);
+    $decor: (none, none, line-through, underline, none, none, none);
+    $trans: (
+      none,
+      none,
+      none,
+      lowercase,
+      none,
+      none,
+      none,
+      none,
+      none,
+      none,
+      none
+    );
+
+    $arrayW: random(7);
+    $arrayS: random(4);
+    $arrayD: random(7);
+    $arrayT: random(11);
+
+    #{$per} {
+      font-weight: nth($weight, $arrayW);
+      font-style: nth($style, $arrayS);
+      text-decoration: nth($decor, $arrayD);
+      text-transform: nth($trans, $arrayT);
+    }
+  }
+}
+
 #globe {
   -moz-user-select: none;
   -webkit-user-select: none;
@@ -195,6 +243,10 @@ body {
 //don't remove this default style I guess
 body {
   /* ... */
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 a:hover {
