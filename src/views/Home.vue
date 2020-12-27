@@ -68,7 +68,7 @@
       <div class="flex justify-center items-center mt-10">
         <img
           id="globe"
-          class="opacity-25 h-6/12 w-6/12 md:h-5/12 md:w-5/12 lg:h-5/12 lg:w-5/12 max-w-screen-md"
+          class="opacity-25 h-9/12 w-9/12 md:h-5/12 md:w-5/12 lg:h-5/12 lg:w-5/12 max-w-screen-md"
           src="@/assets/glove.gif"
         />
         <h1 class="absolute text-white big-text text-center">
@@ -161,7 +161,9 @@
           </div>
         </div>
       </div>
-      <div class="flex flex-col justify-center mt-42 mb-10 text-center px-64">
+      <div
+        class="flex flex-col justify-center mt-42 mb-10 text-center px-2 md:px-10 lg:px-32"
+      >
         <img class="w-10 h-10 self-center mb-10" src="@/assets/glove.gif" />
         <p class="mono">
           I was listening to
