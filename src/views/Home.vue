@@ -65,27 +65,40 @@
         </div>
       </div>
 
-      <div class="flex justify-center items-center mt-10">
+      <div class="flex justify-center items-center mt-20 text-white">
         <img
           id="globe"
-          class="opacity-25 h-9/12 w-9/12 md:h-5/12 md:w-5/12 lg:h-5/12 lg:w-5/12 max-w-screen-md"
+          class="opacity-25 h-8/12 w-8/12 md:h-5/12 md:w-5/12 lg:h-5/12 lg:w-5/12 max-w-screen-md"
           src="@/assets/glove.gif"
         />
-        <h1 class="absolute text-white big-text text-center cursor-wait">
-          <span class="text-cray">d</span><span class="text-cray">a</span
-          ><span class="text-cray">n</span
-          ><span class="text-cray">o</span>&nbsp;<span class="text-cray">d</span
-          ><span class="text-cray">o</span><span class="text-cray">e</span
-          ><span class="text-cray">s</span><br /><span class="text-cray">d</span
-          ><span class="text-cray">e</span><span class="text-cray">s</span
-          ><span class="text-cray">i</span><span class="text-cray">g</span
-          ><span class="text-cray">n</span>
-        </h1>
+
+        <svg
+          viewBox="-172 -172 810 810"
+          fill="transparent"
+          class="absolute h-10/12 w-10/12 md:h-6/12 md:w-6/12 lg:h-6/12 lg:w-6/12 max-w-screen-md animate-spin-slow"
+        >
+          <path
+            id="s3"
+            d="M1.01168 227.122C-0.456874 416.141 136.849 470 235.974 470C313.316 466.82 468 414.967 468 232.993C468 51.0179 313.316 2.58913 235.974 1.12159C157.653 -2.30267 2.26011 66.4318 1.01168 227.122Z"
+          />
+          <text font-size="68" dy="1.3em">
+            <textPath
+              id="globe-animate"
+              xlink:href="#s3"
+              fill="white"
+              font-family="Roobert-SemiBold"
+              side="right"
+            >
+              DANO DOES DESIGN —&nbsp;DANO DOES DESIGN —&nbsp;
+            </textPath>
+          </text>
+        </svg>
       </div>
 
-      <div class="flex flex-col justify-center mt-24">
+      <div class="flex flex-col justify-center mt-20 sm:mt-48">
         <div class="marquee mb-10 max-w-screen-xl">
           <div class="marquee__inner mono cursor-wait" aria-hidden="true">
+            <span>&darr; <span class="text-cray">SCROLL FOR ESSAY</span></span>
             <span>&darr; <span class="text-cray">SCROLL FOR ESSAY</span></span>
             <span>&darr; <span class="text-cray">SCROLL FOR ESSAY</span></span>
             <span>&darr; <span class="text-cray">SCROLL FOR ESSAY</span></span>
@@ -184,6 +197,11 @@
 </template>
 
 <style scoped lang="scss">
+#globe-animate:hover {
+  transition-duration: 5s;
+  transform: scale(1.1);
+}
+
 .big-text {
   font-size: 10vw;
 }
