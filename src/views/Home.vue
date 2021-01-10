@@ -143,6 +143,44 @@
           </div>
         </div>
       </div>
+      <div class="mt-10 sm:mt-24">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-4 gap-4 sm:gap-10 md:gap-22 lg:gap-32"
+        >
+          <div class="col-span-1 flex flex-row sm:flex-row-reverse">
+            <h2 class="text-left sm:text-right">what I do</h2>
+          </div>
+          <div class="col-span-1 sm:col-span-3 mt-2 mono">
+            <p class="font-bold mono">Research &amp; product design</p>
+            <p class="mono mt-1">
+              Discover what needs to be made and why, make it co-operatively,
+              test, learn, iterate.
+              <br />
+              <br />
+              A few buzzwords for those who care and probably SEO:
+              <br />
+
+              UX, UI, Figma, Sketch, HTML, CSS, JS, Vue, TailwindCSS, Design
+              Thinking, Prototypes, Usability Testing, Design Sprints, Agile,
+              Lean, DTA Digital Service Standard.
+            </p>
+
+            <div class="col-span-1 sm:col-span-3 mt-10">
+              <p class="font-bold mono">Minor voice acting</p>
+              <p class="mono mt-1">
+                So far just small radio ads, but really keen to do more.
+              </p>
+            </div>
+            <div class="col-span-1 sm:col-span-3 mt-10">
+              <p class="font-bold mono">Freelance brand &amp; graphic design</p>
+              <p class="mono mt-1">
+                The basics. Social media, physical presence, POS signage,
+                advertising. Prefer to work with small or local businesses.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="mt-10 sm:mt-24 mb-64">
         <div
           class="grid grid-cols-1 sm:grid-cols-4 gap-4 sm:gap-10 md:gap-22 lg:gap-32"
@@ -155,11 +193,22 @@
               <a href="http://protokit.danodoes.design/" class="font-bold"
                 >Prototype kit</a
               ><br />
-              A basic but hyper inclusive UI kit for the stupidly rapid concept
-              prototype work we do at |F|F|. Will include Figma autolayout clone
-              after first pass. Building in Vue with TailwindCSS via Nuxt.
+              Aiming to be a basic, but very inclusive UI kit for the super
+              rapid concept prototype work we do at |F|F|. Will include Figma
+              autolayout clone after first pass. Building in Vue with
+              TailwindCSS via Nuxt.
             </p>
-
+            <div class="col-span-1 sm:col-span-3 mt-2">
+              <p class="mono mb-5">
+                <a href="http://terminal.danodoes.design/" class="font-bold"
+                  >Pseduo-terminal</a
+                ><br />
+                Having heaps of fun making a pseudo-macOS terminal in a browser.
+                Making it from scratch with custom commands, fun easter eggs etc
+                :). I bought a CRT TV to run this through with a Raspberry Pi
+                and it's gonna look 90's vintage soon.
+              </p>
+            </div>
             <div class="col-span-1 sm:col-span-3 mt-2">
               <p class="mono mb-5">
                 <a href="http://turnips.danodoes.design/" class="font-bold"
