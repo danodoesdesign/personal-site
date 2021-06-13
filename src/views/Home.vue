@@ -1,16 +1,14 @@
 <template>
-  <div class="flex justify-center w-full">
-    <div class="container">
-      <div class="grid grid-cols-4 gap-1">
-        <div class="col-span-1 flex flex-col">
+  <div class="flex justify-center w-full h-full">
+    <div class="container pb-64 mb-10">
+      <div class="grid grid-cols-4 gap-1 sm:px-10">
+        <div class="flex flex-col col-span-1">
           <div class="grid grid-cols-5 gap-2 mb-2">
             <div class="col-span-1">
               <img class="inline" src="@/assets/twitter.svg" />
             </div>
             <div class="col-span-4">
-              <a href="http://twitter.com/danodoesdesign" class="mono"
-                >Twitter</a
-              >
+              <a href="http://twitter.com/danohara__" class="mono">Twitter</a>
             </div>
           </div>
           <div class="grid grid-cols-5 gap-2 mb-2">
@@ -26,9 +24,7 @@
               <img class="inline mr-2" src="@/assets/insta.svg" />
             </div>
             <div class="col-span-4">
-              <a href="http://instagram.com/danodoesdesign" class="mono"
-                >Insta</a
-              >
+              <a href="http://instagram.com/dano.hara" class="mono">Insta</a>
             </div>
           </div>
           <div class="grid grid-cols-5 gap-2 mb-2">
@@ -41,7 +37,7 @@
               >
             </div>
           </div>
-          <div class="grid grid-cols-5 gap-2 mb-2">
+          <div class="grid grid-cols-5 gap-2">
             <div class="col-span-1">
               <img class="inline mr-2" src="@/assets/email.svg" />
             </div>
@@ -51,9 +47,9 @@
           </div>
         </div>
         <div
-          class="col-span-4 sm:col-span-3 mt-4 sm:mt-0 flex flex-row-reverse"
+          class="flex flex-row-reverse col-span-4 mt-4 sm:col-span-3 sm:mt-0"
         >
-          <p class="mono">
+          <p class="mono experiment sm:text-right">
             Working for
             <a href="http://www.futurefriendly.team">Future Friendly</a>.
             Located at
@@ -65,49 +61,77 @@
         </div>
       </div>
 
-      <div class="flex justify-center screen-height items-center">
-        <!-- title section -->
-        <h1 class="expanding-title -mt-26 sm:-mt-32">
-          dano does
-          <span class="fancy-colour">design</span>
-        </h1>
+      <div class="flex items-center justify-center mt-20 text-white">
+        <img
+          id="globe"
+          class="w-8/12 max-w-screen-md opacity-25  h-8/12 md:h-5/12 md:w-5/12 lg:h-5/12 lg:w-5/12"
+          src="@/assets/glove.gif"
+        />
+
+        <svg
+          viewBox="-172 -172 810 810"
+          fill="transparent"
+          class="absolute w-10/12 max-w-screen-md  h-10/12 md:h-6/12 md:w-6/12 lg:h-6/12 lg:w-6/12 animate-spin-slow"
+        >
+          <path
+            id="s3"
+            d="M1.01168 227.122C-0.456874 416.141 136.849 470 235.974 470C313.316 466.82 468 414.967 468 232.993C468 51.0179 313.316 2.58913 235.974 1.12159C157.653 -2.30267 2.26011 66.4318 1.01168 227.122Z"
+          />
+          <text font-size="68" dy="1.3em">
+            <textPath
+              id="globe-animate"
+              xlink:href="#s3"
+              fill="white"
+              font-family="Roobert-SemiBold"
+              side="right"
+            >
+              DANO DOES DESIGN —&nbsp;DANO DOES DESIGN —&nbsp;
+            </textPath>
+          </text>
+        </svg>
       </div>
-      <div class="flex justify-center">
-        <!-- scrolling text -->
-        <div class="marquee">
-          <div class="marquee__inner mono" aria-hidden="true">
-            <span>&darr; SCROLL FOR ESSAY</span>
-            <span>&darr; SCROLL FOR ESSAY</span>
-            <span>&darr; SCROLL FOR ESSAY</span>
-            <span>&darr; SCROLL FOR ESSAY</span>
-            <span>&darr; SCROLL FOR ESSAY</span>
-            <span>&darr; SCROLL FOR ESSAY</span>
-            <span>&darr; SCROLL FOR ESSAY</span>
-            <span>&darr; SCROLL FOR ESSAY</span>
-            <span>&darr; SCROLL FOR ESSAY</span>
+
+      <div class="flex flex-col justify-center mt-20 sm:mt-48">
+        <div class="max-w-screen-xl mb-10 marquee">
+          <div class="cursor-wait marquee__inner mono" aria-hidden="true">
+            <span>&darr; <span class="text-cray">SCROLL FOR ESSAY</span></span>
+            <span>&darr; <span class="text-cray">SCROLL FOR ESSAY</span></span>
+            <span>&darr; <span class="text-cray">SCROLL FOR ESSAY</span></span>
+            <span>&darr; <span class="text-cray">SCROLL FOR ESSAY</span></span>
+            <span>&darr; <span class="text-cray">SCROLL FOR ESSAY</span></span>
+            <span>&darr; <span class="text-cray">SCROLL FOR ESSAY</span></span>
+            <span>&darr; <span class="text-cray">SCROLL FOR ESSAY</span></span>
+            <span>&darr; <span class="text-cray">SCROLL FOR ESSAY</span></span>
+            <span>&darr; <span class="text-cray">SCROLL FOR ESSAY</span></span>
+            <span>&darr; <span class="text-cray">SCROLL FOR ESSAY</span></span>
+            <span>&darr; <span class="text-cray">SCROLL FOR ESSAY</span></span>
           </div>
         </div>
       </div>
       <!-- header over -->
-      <div class="mt-40">
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-32">
-          <div class="col-span-1 flex flex-row sm:flex-row-reverse">
-            <h2>about me</h2>
+      <div class="mt-10 sm:mt-24 md:mt-48">
+        <div
+          id="nextSection"
+          class="grid grid-cols-1 gap-4  sm:grid-cols-4 sm:gap-10 md:gap-22 lg:gap-32"
+        >
+          <div class="flex flex-row col-span-1 sm:flex-row-reverse">
+            <h2 class="text-left sm:text-right">about me</h2>
           </div>
-          <div class="col-span-1 sm:col-span-2 mt-2">
-            <p class="mono mb-3">
-              I’m a Daniel O’Hara, an Australian Product Designer who aspires to
+          <div class="col-span-1 mt-2 sm:col-span-3">
+            <p class="mb-3 mono">
+              I’m Daniel O’Hara, an Australian Product Designer who aspires to
               leave a positive mark on the world — instead of creating endlessly
               for the sake of capitalism &amp; profit.
             </p>
-            <p class="mono mb-3">
+
+            <p class="mb-3 mono">
               A lot of my work has been with the Australian government, and I
               worry about my designy/techy skills stagnating in bureaucracy.
               However I believe, while working down under, I can help create the
               greatest social change by leveraging the scope of the powers that
               be.
             </p>
-            <p class="mono mb-3">
+            <p class="mb-3 mono">
               By creating inclusive products and services, and helping mature
               design capability in the public service, I think I’ll help leave
               this world better than when I found it.
@@ -115,37 +139,226 @@
           </div>
         </div>
       </div>
-      <div class="mt-40 mb-40">
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-32">
-          <div class="col-span-1 flex flex-row sm:flex-row-reverse">
-            <h2>more info??</h2>
+      <div class="mt-10 sm:mt-24">
+        <div
+          class="grid grid-cols-1 gap-4  sm:grid-cols-4 sm:gap-10 md:gap-22 lg:gap-32"
+        >
+          <div class="flex flex-row col-span-1 sm:flex-row-reverse">
+            <h2 class="text-left sm:text-right">what I do</h2>
           </div>
-          <div class="col-span-1 sm:col-span-2 mt-2">
-            <p class="mono mb-3">
-              I'm not looking to write this (or make case studies) rn bc I'm not
-              looking for a role, but thanks for showing interest 🥺🥺
+          <div class="col-span-1 mt-2 sm:col-span-3 mono">
+            <p class="font-bold mono">Research &amp; product design</p>
+            <p class="mt-1 mono">
+              Discover what needs to be made and why, make it co-operatively,
+              test, learn, iterate.
+              <br />
+              <br />
+              A few buzzwords for those who care and probably SEO:
+              <br />
+
+              UX, UI, Figma, Sketch, HTML, CSS, JS, Vue, TailwindCSS, Design
+              Thinking, Prototypes, Usability Testing, Design Sprints, Agile,
+              Lean, DTA Digital Service Standard.
             </p>
-            <p class="mono mb-3">
-              Hey look since you're here DM or email me and tell me your story!!
-            </p>
-            <p class="mono">
-              <a href="http://twitter.com/danodoesdesign"
-                >DM me on twitter dot com</a
-              >
-              or <a href="mailto:dano.does.design@gmail.com">email me</a>.
-            </p>
+
+            <div class="col-span-1 mt-10 sm:col-span-3">
+              <p class="font-bold mono">Minor voice acting</p>
+              <p class="mt-1 mono">
+                So far just small radio ads, but really keen to do more.
+              </p>
+            </div>
+            <div class="col-span-1 mt-10 sm:col-span-3">
+              <p class="font-bold mono">Freelance brand &amp; graphic design</p>
+              <p class="mt-1 mono">
+                The basics. Social media, physical presence, POS signage,
+                advertising. Prefer to work with small or local businesses.
+              </p>
+            </div>
           </div>
         </div>
+      </div>
+      <div class="mt-10 mb-64 sm:mt-24">
+        <div
+          class="grid grid-cols-1 gap-4  sm:grid-cols-4 sm:gap-10 md:gap-22 lg:gap-32"
+        >
+          <div class="flex flex-row col-span-1 sm:flex-row-reverse">
+            <h2 class="text-left sm:text-right">side <br />projects</h2>
+          </div>
+          <div class="col-span-1 mt-2 sm:col-span-3">
+            <p class="mb-5 mono">
+              <a href="http://protokit.danodoes.design/" class="font-bold"
+                >Prototype kit</a
+              ><br />
+              Aiming to be a basic, but very inclusive UI kit for the super
+              rapid concept prototype work we do at |F|F|. Will include Figma
+              autolayout clone after first pass. Building in Vue with
+              TailwindCSS via Nuxt.
+            </p>
+            <div class="col-span-1 mt-2 sm:col-span-3">
+              <p class="mb-5 mono">
+                <a href="http://terminal.danodoes.design/" class="font-bold"
+                  >Pseduo-terminal</a
+                ><br />
+                Having heaps of fun making a pseudo-macOS terminal in a browser.
+                Making it from scratch with custom commands, fun easter eggs etc
+                :). I bought a CRT TV to run this through with a Raspberry Pi
+                and it's gonna look 90's vintage soon.
+              </p>
+            </div>
+            <div class="col-span-1 mt-2 sm:col-span-3">
+              <p class="mb-5 mono">
+                <a href="http://turnips.danodoes.design/" class="font-bold"
+                  >Turnip tracker</a
+                ><br />
+                Have some ideas to make this a really sophisticated tool, if
+                you're into Animal Crossing.
+              </p>
+            </div>
+
+            <div class="col-span-1 mt-2 sm:col-span-3">
+              <p class="mb-5 mono">
+                <span class="font-bold">3D for the web</span><br />
+                Can't link but making some cool shit via
+                <a href="http://www.3dfordesigners.com/">3D for Designers</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex flex-col justify-center px-2 text-center  mt-42 md:px-10 lg:px-32"
+      >
+        <img class="self-center w-10 h-10 mb-10" src="@/assets/glove.gif" />
+        <p class="mono">
+          I was listening to
+          <a href="https://www.youtube.com/watch?v=cNAdtkSjSps">Pong</a> the
+          entire time I was making this, and I think I hit the mark with the
+          white theme that hints and cyberpunk dystopia but is still reasonably
+          professional.
+        </p>
       </div>
     </div>
   </div>
 </template>
 
 <style scoped lang="scss">
+#globe-animate:hover {
+  transition-duration: 5s;
+  transform: scale(1.1);
+}
+
+.big-text {
+  font-size: 10vw;
+}
+body {
+  background-color: #333;
+  padding-bottom: 20rem;
+}
+
+.text-cray:hover {
+  &,
+  * {
+    animation: cray 6s infinite steps(80);
+    display: inline-block;
+  }
+}
+
+@keyframes cray {
+  @for $i from 1 to 80 {
+    $per: 100% / 80 * $i;
+    $weight: (100, 200, 300, 400, 500, 600, 700);
+    $style: (normal, italic, normal, normal);
+    $decor: (none, none, line-through, underline, none, none, none);
+    $trans: (
+      none,
+      none,
+      none,
+      lowercase,
+      none,
+      none,
+      none,
+      none,
+      none,
+      none,
+      none
+    );
+
+    $arrayW: random(7);
+    $arrayS: random(4);
+    $arrayD: random(7);
+    $arrayT: random(11);
+
+    #{$per} {
+      font-weight: nth($weight, $arrayW);
+      font-style: nth($style, $arrayS);
+      text-decoration: nth($decor, $arrayD);
+      text-transform: nth($trans, $arrayT);
+    }
+  }
+}
+
+#globe {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
 //for some reason getting rid of anything here causes tailwind to mess up so
 //don't remove this default style I guess
 body {
   /* ... */
+}
+
+html {
+  scroll-behavior: smooth;
+  margin-bottom: 2rem;
+}
+
+a:hover {
+  outline: none;
+  text-align: center;
+  font-weight: 700;
+  background: rgb(255, 255, 255);
+  color: black;
+
+  &,
+  * {
+    animation: cray 6s infinite steps(80);
+    display: inline-block;
+  }
+}
+
+@keyframes cray {
+  @for $i from 1 to 80 {
+    $per: 100% / 80 * $i;
+    $weight: (100, 200, 300, 400, 500, 600, 700);
+    $style: (normal, italic, normal, normal);
+    $decor: (none, none, line-through, underline, none, none, none);
+    $trans: (
+      none,
+      none,
+      uppercase,
+      lowercase,
+      capitalize,
+      none,
+      none,
+      none,
+      none,
+      none,
+      none
+    );
+
+    $arrayW: random(7);
+    $arrayS: random(4);
+    $arrayD: random(7);
+    $arrayT: random(11);
+
+    #{$per} {
+      font-weight: nth($weight, $arrayW);
+      font-style: nth($style, $arrayS);
+      text-decoration: nth($decor, $arrayD);
+      text-transform: nth($trans, $arrayT);
+    }
+  }
 }
 
 li {
@@ -157,16 +370,13 @@ a {
   &:hover {
     font-weight: 600;
     text-decoration: none;
-    transform: translate3d(var(--move-initial), 0, 0);
-    animation: marquee 3s linear infinite;
-    animation-play-state: running;
   }
 }
-
+/*
 .screen-height {
-  height: calc(100vh - 17.5rem);
+  height: calc(100vh - 25rem);
 }
-
+*/
 @media only screen and (max-width: 640px) {
   //640 is tailwind base small breakpoint btw
   //fixes phone browser UI rendering over the top
@@ -175,55 +385,6 @@ a {
   }
 }
 
-.expanding-title {
-  font-size: 13vw;
-  white-space: nowrap;
-}
-
-.fancy-colour {
-  background: linear-gradient(270deg, #ec2f4b, #009fff);
-  background-size: 400% 400%;
-
-  -webkit-animation: gradientAnimation 6s ease infinite;
-  -moz-animation: gradientAnimation 6s ease infinite;
-  animation: gradientAnimation 6s ease infinite;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-@-webkit-keyframes gradientAnimation {
-  0% {
-    background-position: 0% 20%;
-  }
-  50% {
-    background-position: 100% 81%;
-  }
-  100% {
-    background-position: 0% 20%;
-  }
-}
-@-moz-keyframes gradientAnimation {
-  0% {
-    background-position: 0% 20%;
-  }
-  50% {
-    background-position: 100% 81%;
-  }
-  100% {
-    background-position: 0% 20%;
-  }
-}
-@keyframes gradientAnimation {
-  0% {
-    background-position: 0% 20%;
-  }
-  50% {
-    background-position: 100% 81%;
-  }
-  100% {
-    background-position: 0% 20%;
-  }
-}
 .marquee {
   position: relative;
   overflow: hidden;
@@ -239,16 +400,13 @@ a {
   transform: translate3d(var(--move-initial), 0, 0);
   animation: marquee 10s linear infinite;
   animation-play-state: running;
+  animation-direction: alternate;
 }
 
 .marquee span {
   white-space: nowrap;
   font-size: 1.125rem;
   margin-left: 0.5rem;
-}
-
-.marquee:hover .marquee__inner {
-  animation-play-state: paused;
 }
 
 @keyframes marquee {
@@ -267,6 +425,6 @@ export default {
   name: "Home",
   components: {
     /* ... */
-  }
+  },
 };
 </script>
