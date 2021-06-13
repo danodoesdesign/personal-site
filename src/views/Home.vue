@@ -1,16 +1,14 @@
 <template>
   <div class="flex justify-center w-full h-full">
-    <div class="container pb-64">
+    <div class="container pb-64 mb-10">
       <div class="grid grid-cols-4 gap-1 sm:px-10">
-        <div class="col-span-1 flex flex-col">
+        <div class="flex flex-col col-span-1">
           <div class="grid grid-cols-5 gap-2 mb-2">
             <div class="col-span-1">
               <img class="inline" src="@/assets/twitter.svg" />
             </div>
             <div class="col-span-4">
-              <a href="http://twitter.com/danodoesdesign" class="mono"
-                >Twitter</a
-              >
+              <a href="http://twitter.com/danohara__" class="mono">Twitter</a>
             </div>
           </div>
           <div class="grid grid-cols-5 gap-2 mb-2">
@@ -26,9 +24,7 @@
               <img class="inline mr-2" src="@/assets/insta.svg" />
             </div>
             <div class="col-span-4">
-              <a href="http://instagram.com/danodoesdesign" class="mono"
-                >Insta</a
-              >
+              <a href="http://instagram.com/dano.hara" class="mono">Insta</a>
             </div>
           </div>
           <div class="grid grid-cols-5 gap-2 mb-2">
@@ -51,7 +47,7 @@
           </div>
         </div>
         <div
-          class="col-span-4 sm:col-span-3 mt-4 sm:mt-0 flex flex-row-reverse"
+          class="flex flex-row-reverse col-span-4 mt-4 sm:col-span-3 sm:mt-0"
         >
           <p class="mono experiment sm:text-right">
             Working for
@@ -65,17 +61,17 @@
         </div>
       </div>
 
-      <div class="flex justify-center items-center mt-20 text-white">
+      <div class="flex items-center justify-center mt-20 text-white">
         <img
           id="globe"
-          class="opacity-25 h-8/12 w-8/12 md:h-5/12 md:w-5/12 lg:h-5/12 lg:w-5/12 max-w-screen-md"
+          class="w-8/12 max-w-screen-md opacity-25  h-8/12 md:h-5/12 md:w-5/12 lg:h-5/12 lg:w-5/12"
           src="@/assets/glove.gif"
         />
 
         <svg
           viewBox="-172 -172 810 810"
           fill="transparent"
-          class="absolute h-10/12 w-10/12 md:h-6/12 md:w-6/12 lg:h-6/12 lg:w-6/12 max-w-screen-md animate-spin-slow"
+          class="absolute w-10/12 max-w-screen-md  h-10/12 md:h-6/12 md:w-6/12 lg:h-6/12 lg:w-6/12 animate-spin-slow"
         >
           <path
             id="s3"
@@ -96,8 +92,8 @@
       </div>
 
       <div class="flex flex-col justify-center mt-20 sm:mt-48">
-        <div class="marquee mb-10 max-w-screen-xl">
-          <div class="marquee__inner mono cursor-wait" aria-hidden="true">
+        <div class="max-w-screen-xl mb-10 marquee">
+          <div class="cursor-wait marquee__inner mono" aria-hidden="true">
             <span>&darr; <span class="text-cray">SCROLL FOR ESSAY</span></span>
             <span>&darr; <span class="text-cray">SCROLL FOR ESSAY</span></span>
             <span>&darr; <span class="text-cray">SCROLL FOR ESSAY</span></span>
@@ -116,26 +112,26 @@
       <div class="mt-10 sm:mt-24 md:mt-48">
         <div
           id="nextSection"
-          class="grid grid-cols-1 sm:grid-cols-4 gap-4 sm:gap-10 md:gap-22 lg:gap-32"
+          class="grid grid-cols-1 gap-4  sm:grid-cols-4 sm:gap-10 md:gap-22 lg:gap-32"
         >
-          <div class="col-span-1 flex flex-row sm:flex-row-reverse">
+          <div class="flex flex-row col-span-1 sm:flex-row-reverse">
             <h2 class="text-left sm:text-right">about me</h2>
           </div>
-          <div class="col-span-1 sm:col-span-3 mt-2">
-            <p class="mono mb-3">
-              I’m a Daniel O’Hara, an Australian Product Designer who aspires to
+          <div class="col-span-1 mt-2 sm:col-span-3">
+            <p class="mb-3 mono">
+              I’m Daniel O’Hara, an Australian Product Designer who aspires to
               leave a positive mark on the world — instead of creating endlessly
               for the sake of capitalism &amp; profit.
             </p>
 
-            <p class="mono mb-3">
+            <p class="mb-3 mono">
               A lot of my work has been with the Australian government, and I
               worry about my designy/techy skills stagnating in bureaucracy.
               However I believe, while working down under, I can help create the
               greatest social change by leveraging the scope of the powers that
               be.
             </p>
-            <p class="mono mb-3">
+            <p class="mb-3 mono">
               By creating inclusive products and services, and helping mature
               design capability in the public service, I think I’ll help leave
               this world better than when I found it.
@@ -145,14 +141,14 @@
       </div>
       <div class="mt-10 sm:mt-24">
         <div
-          class="grid grid-cols-1 sm:grid-cols-4 gap-4 sm:gap-10 md:gap-22 lg:gap-32"
+          class="grid grid-cols-1 gap-4  sm:grid-cols-4 sm:gap-10 md:gap-22 lg:gap-32"
         >
-          <div class="col-span-1 flex flex-row sm:flex-row-reverse">
+          <div class="flex flex-row col-span-1 sm:flex-row-reverse">
             <h2 class="text-left sm:text-right">what I do</h2>
           </div>
-          <div class="col-span-1 sm:col-span-3 mt-2 mono">
+          <div class="col-span-1 mt-2 sm:col-span-3 mono">
             <p class="font-bold mono">Research &amp; product design</p>
-            <p class="mono mt-1">
+            <p class="mt-1 mono">
               Discover what needs to be made and why, make it co-operatively,
               test, learn, iterate.
               <br />
@@ -165,15 +161,15 @@
               Lean, DTA Digital Service Standard.
             </p>
 
-            <div class="col-span-1 sm:col-span-3 mt-10">
+            <div class="col-span-1 mt-10 sm:col-span-3">
               <p class="font-bold mono">Minor voice acting</p>
-              <p class="mono mt-1">
+              <p class="mt-1 mono">
                 So far just small radio ads, but really keen to do more.
               </p>
             </div>
-            <div class="col-span-1 sm:col-span-3 mt-10">
+            <div class="col-span-1 mt-10 sm:col-span-3">
               <p class="font-bold mono">Freelance brand &amp; graphic design</p>
-              <p class="mono mt-1">
+              <p class="mt-1 mono">
                 The basics. Social media, physical presence, POS signage,
                 advertising. Prefer to work with small or local businesses.
               </p>
@@ -181,15 +177,15 @@
           </div>
         </div>
       </div>
-      <div class="mt-10 sm:mt-24 mb-64">
+      <div class="mt-10 mb-64 sm:mt-24">
         <div
-          class="grid grid-cols-1 sm:grid-cols-4 gap-4 sm:gap-10 md:gap-22 lg:gap-32"
+          class="grid grid-cols-1 gap-4  sm:grid-cols-4 sm:gap-10 md:gap-22 lg:gap-32"
         >
-          <div class="col-span-1 flex flex-row sm:flex-row-reverse">
-            <h2 class="text-left sm:text-right">current <br />projects</h2>
+          <div class="flex flex-row col-span-1 sm:flex-row-reverse">
+            <h2 class="text-left sm:text-right">side <br />projects</h2>
           </div>
-          <div class="col-span-1 sm:col-span-3 mt-2">
-            <p class="mono mb-5">
+          <div class="col-span-1 mt-2 sm:col-span-3">
+            <p class="mb-5 mono">
               <a href="http://protokit.danodoes.design/" class="font-bold"
                 >Prototype kit</a
               ><br />
@@ -198,8 +194,8 @@
               autolayout clone after first pass. Building in Vue with
               TailwindCSS via Nuxt.
             </p>
-            <div class="col-span-1 sm:col-span-3 mt-2">
-              <p class="mono mb-5">
+            <div class="col-span-1 mt-2 sm:col-span-3">
+              <p class="mb-5 mono">
                 <a href="http://terminal.danodoes.design/" class="font-bold"
                   >Pseduo-terminal</a
                 ><br />
@@ -209,8 +205,8 @@
                 and it's gonna look 90's vintage soon.
               </p>
             </div>
-            <div class="col-span-1 sm:col-span-3 mt-2">
-              <p class="mono mb-5">
+            <div class="col-span-1 mt-2 sm:col-span-3">
+              <p class="mb-5 mono">
                 <a href="http://turnips.danodoes.design/" class="font-bold"
                   >Turnip tracker</a
                 ><br />
@@ -219,8 +215,8 @@
               </p>
             </div>
 
-            <div class="col-span-1 sm:col-span-3 mt-2">
-              <p class="mono mb-5">
+            <div class="col-span-1 mt-2 sm:col-span-3">
+              <p class="mb-5 mono">
                 <span class="font-bold">3D for the web</span><br />
                 Can't link but making some cool shit via
                 <a href="http://www.3dfordesigners.com/">3D for Designers</a>.
@@ -230,9 +226,9 @@
         </div>
       </div>
       <div
-        class="flex flex-col justify-center mt-42 mb-10 text-center px-2 md:px-10 lg:px-32"
+        class="flex flex-col justify-center px-2 text-center  mt-42 md:px-10 lg:px-32"
       >
-        <img class="w-10 h-10 self-center mb-10" src="@/assets/glove.gif" />
+        <img class="self-center w-10 h-10 mb-10" src="@/assets/glove.gif" />
         <p class="mono">
           I was listening to
           <a href="https://www.youtube.com/watch?v=cNAdtkSjSps">Pong</a> the
@@ -314,6 +310,7 @@ body {
 
 html {
   scroll-behavior: smooth;
+  margin-bottom: 2rem;
 }
 
 a:hover {
