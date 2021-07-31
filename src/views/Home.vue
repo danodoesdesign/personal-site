@@ -4,32 +4,32 @@
       <div class="grid grid-cols-4 gap-1 sm:px-10">
         <div class="flex flex-col col-span-1">
           <div class="grid grid-cols-5 gap-2 mb-2">
-            <div class="col-span-1">
-              <img class="inline" src="@/assets/twitter.svg" />
+            <div class="flex flex-row col-span-1">
+              <img class="inline" src="@/assets/icon-twitter.svg" />
             </div>
             <div class="col-span-4">
               <a href="http://twitter.com/danohara__" class="mono">Twitter</a>
             </div>
           </div>
           <div class="grid grid-cols-5 gap-2 mb-2">
-            <div class="col-span-1">
-              <img class="inline mr-2" src="@/assets/figma.svg" />
+            <div class="flex flex-row col-span-1">
+              <img class="inline mr-2" src="@/assets/icon-figma.svg" />
             </div>
             <div class="col-span-4">
               <a href="http://figma.com/@dano" class="mono">Figma</a>
             </div>
           </div>
           <div class="grid grid-cols-5 gap-2 mb-2">
-            <div class="col-span-1">
-              <img class="inline mr-2" src="@/assets/insta.svg" />
+            <div class="flex flex-row col-span-1">
+              <img class="inline mr-2" src="@/assets/icon-insta.svg" />
             </div>
             <div class="col-span-4">
               <a href="http://instagram.com/dano.hara" class="mono">Insta</a>
             </div>
           </div>
           <div class="grid grid-cols-5 gap-2 mb-2">
-            <div class="col-span-1">
-              <img class="inline mr-2" src="@/assets/github.svg" />
+            <div class="flex flex-row col-span-1">
+              <img class="inline mr-2" src="@/assets/icon-github.svg" />
             </div>
             <div class="col-span-4">
               <a href="https://github.com/danodoesdesign" class="mono"
@@ -37,12 +37,20 @@
               >
             </div>
           </div>
-          <div class="grid grid-cols-5 gap-2">
-            <div class="col-span-1">
-              <img class="inline mr-2" src="@/assets/email.svg" />
+          <div class="grid grid-cols-5 gap-2 mb-2">
+            <div class="flex flex-row col-span-1">
+              <img class="inline mr-2" src="@/assets/icon-email.svg" />
             </div>
             <div class="col-span-4">
               <a href="mailto:dano.does.design@gmail.com" class="mono">Email</a>
+            </div>
+          </div>
+          <div class="grid grid-cols-5 gap-2">
+            <div class="flex flex-row col-span-1">
+              <img class="inline mr-2" src="@/assets/icon-doc.svg" />
+            </div>
+            <div class="col-span-4">
+              <a href="https://read.cv/dano" class="mono">CV</a>
             </div>
           </div>
         </div>
@@ -50,9 +58,9 @@
           class="flex flex-row-reverse col-span-4 mt-4 sm:col-span-3 sm:mt-0"
         >
           <p class="mono experiment sm:text-right">
-            Working for
+            Senior Product Designer @
             <a href="http://www.futurefriendly.team">Future Friendly</a>.
-            Located at
+            Located @
             <a
               href="https://www.google.com/maps/place/Canberra+ACT+2601/@-35.2813043,149.1204446,15z/data=!3m1!4b1!4m5!3m4!1s0x6b164d69b05c9021:0x500ea6ea7695660!8m2!3d-35.2809368!4d149.1300092"
               >35.2809° S, 149.1300° E.</a
